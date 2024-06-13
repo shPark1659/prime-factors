@@ -2,8 +2,6 @@ class PrimeFactor:
     @staticmethod
     def of(num):
         result = []
-        if num == 2:
-            result.append(2)
-        elif num == 3:
-            result.append(3)
+        if num > 1:
+            result.append(num)
         return result
