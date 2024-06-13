@@ -1,2 +1,3 @@
 class PrimeFactor:
-    pass
+    def of(self, num):
+        return None
