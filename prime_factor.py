@@ -3,13 +3,11 @@ class PrimeFactor:
     def of(num):
         result = []
         if num > 1:
-            if num == 4:
-                while num != 1:
-                    result.append(2)
-                    num //= 2
-            elif num == 6:
-                result.append(2)
-                result.append(3)
-            else:
-                result.append(num)
+            divisor = 2
+            while num > 1:
+                while num % divisor == 0:
+                    result.append(divisor)
+                    num //= divisor
+                divisor += 1
+
         return result
