@@ -8,5 +8,4 @@ class PrimeFactor:
                 result.append(divisor)
                 num //= divisor
             divisor += 1
-
         return result
