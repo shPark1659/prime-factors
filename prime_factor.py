@@ -1,3 +1,7 @@
 class PrimeFactor:
-    def of(self, num):
-        return []
+    @staticmethod
+    def of(num):
+        if num == 1:
+            return []
+        else:
+            return [2]

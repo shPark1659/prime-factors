@@ -5,8 +5,7 @@ from prime_factor import PrimeFactor
 
 class TestPrimeFactor(TestCase):
     def test_prime_factor_of_1(self):
-        pf = PrimeFactor()
+        self.assertEqual(PrimeFactor.of(1), [])
 
-        expected = pf.of(1)
-
-        self.assertEqual(expected, [])
+    def test_prime_factor_of_2(self):
+        self.assertEqual(PrimeFactor.of(2), [2])
