@@ -1,3 +1,3 @@
 class PrimeFactor:
     def of(self, num):
-        return None
+        return []

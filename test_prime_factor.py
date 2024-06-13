@@ -9,4 +9,4 @@ class TestPrimeFactor(TestCase):
 
         expected = pf.of(1)
 
-        self.assertIsNone(expected)
+        self.assertEqual(expected, [])
