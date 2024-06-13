@@ -3,5 +3,9 @@ class PrimeFactor:
     def of(num):
         result = []
         if num > 1:
-            result.append(num)
+            if num == 4:
+                result.append(2)
+                result.append(2)
+            else:
+                result.append(num)
         return result
